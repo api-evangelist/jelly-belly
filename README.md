@@ -1,49 +1,60 @@
 # Jelly Belly (jelly-belly)
 
-This API provides detailed information about Jelly Belly beans, including
-facts, milestones, recipes, and bean details. It is designed to be a
-comprehensive resource for Jelly Belly enthusiasts and researchers. 
+Jelly Belly is the iconic American gourmet jelly bean candy company, owned by Ferrara Candy Company, known for its signature flavor assortments, themed collections, and historical association with American culture. This repository indexes the company's web properties and the community Jelly Belly Wiki API which catalogs Jelly Belly beans, flavors, recipes, facts, and milestones.
 
-**URL:** [Visit APIs.json URL](
-https://raw.githubusercontent.com/api-search/jelly-belly/refs/heads/main/apis.yml)
+**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/jelly-belly/refs/heads/main/apis.yml)
 
 ## Scope
 
-- **Type:** Index 
-- **Position:** Consumer 
-- **Access:** 3rd-Party 
+- **Type:** Index
+- **Position:** Consumer
+- **Access:** 3rd-Party
 
-## Tags:
+## Tags
 
- - Jelly Beans
+- Beans
+- Candy
+- Confectionery
+- Food
+- Jelly Beans
+- Recipes
 
 ## Timestamps
 
-- **Created:** 2024-11-14 
-- **Modified:** 2024-11-14 
+- **Created:** 2024-11-14
+- **Modified:** 2026-04-28
 
 ## APIs
 
-### Jelly Belly
+### Jelly Belly Wiki API
 
-This API provides detailed information about Jelly Belly beans, including
-facts, milestones, recipes, and bean details. It is designed to be a
-comprehensive resource for Jelly Belly enthusiasts and researchers. 
+The Jelly Belly Wiki API is a community-built, read-only REST API that provides detailed information about Jelly Belly beans, including flavor details, facts, milestones, and recipes. It is designed as a reference resource for Jelly Belly enthusiasts, hobbyist developers, and learners experimenting with public APIs.
 
-**Human URL:** [ https://jelly-belly-wiki.netlify.app/api]( https://jelly-belly-wiki.netlify.app/api)
+**Human URL:** [https://jelly-belly-wiki.netlify.app/](https://jelly-belly-wiki.netlify.app/)
 
+#### Tags
 
-#### Tags:
-
- - API
+- Candy
+- Jelly Beans
+- Recipes
 
 #### Properties
 
-- [Documentation]( https://jelly-belly-wiki.netlify.app/api)
+- [Documentation](https://jelly-belly-wiki.netlify.app/)
+
+## Common Properties
+
+- [Website](https://www.jellybelly.com/)
+- [About / Heritage](https://www.jellybelly.com/our-heritage)
+- [Visitor Center](https://www.jellybelly.com/visitor-center)
+- [Recipes](https://www.jellybelly.com/beanspiration)
+- [Where To Buy](https://www.jellybelly.com/where-to-buy)
+- [Privacy Policy](https://www.jellybelly.com/privacy-policy)
+- [Terms of Use](https://www.jellybelly.com/terms-use)
+- [Accessibility](https://www.jellybelly.com/accessibility)
 
 ## Maintainers
 
 **FN:** Kin Lane
 
-**Email:** info@apievangelist.com
-
+**Email:** kin@apievangelist.com
