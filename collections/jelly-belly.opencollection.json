@@ -1,0 +1,172 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Jelly Belly Wiki API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "List Jelly Belly beans (paginated)",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://jellybellywikiapi.onrender.com/api/Beans",
+        "params": [
+          {
+            "name": "pageIndex",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "pageSize",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "flavorName",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "List Jelly Belly beans (paginated)"
+    },
+    {
+      "info": {
+        "name": "Get a single bean by id",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://jellybellywikiapi.onrender.com/api/Beans/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a single bean by id"
+    },
+    {
+      "info": {
+        "name": "List flavor combinations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://jellybellywikiapi.onrender.com/api/Combinations"
+      },
+      "docs": "List flavor combinations"
+    },
+    {
+      "info": {
+        "name": "Get a combination by id",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://jellybellywikiapi.onrender.com/api/Combinations/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a combination by id"
+    },
+    {
+      "info": {
+        "name": "List Jelly Belly facts",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://jellybellywikiapi.onrender.com/api/Facts"
+      },
+      "docs": "List Jelly Belly facts"
+    },
+    {
+      "info": {
+        "name": "Get a fact by id",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://jellybellywikiapi.onrender.com/api/Facts/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a fact by id"
+    },
+    {
+      "info": {
+        "name": "List Jelly Belly milestones",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://jellybellywikiapi.onrender.com/api/MileStones"
+      },
+      "docs": "List Jelly Belly milestones"
+    },
+    {
+      "info": {
+        "name": "Get a milestone by id",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://jellybellywikiapi.onrender.com/api/MileStones/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a milestone by id"
+    },
+    {
+      "info": {
+        "name": "List Jelly Belly recipes",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://jellybellywikiapi.onrender.com/api/Recipes"
+      },
+      "docs": "List Jelly Belly recipes"
+    },
+    {
+      "info": {
+        "name": "Get a recipe by id",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://jellybellywikiapi.onrender.com/api/Recipes/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a recipe by id"
+    }
+  ],
+  "bundled": true
+}

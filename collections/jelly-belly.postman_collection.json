@@ -1,0 +1,773 @@
+{
+  "item": [
+    {
+      "id": "d890611f-ef29-470b-9ad9-a86aae99f4b3",
+      "name": "List Jelly Belly beans (paginated)",
+      "request": {
+        "name": "List Jelly Belly beans (paginated)",
+        "description": {},
+        "url": {
+          "path": [
+            "api",
+            "Beans"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "pageIndex",
+              "value": "1"
+            },
+            {
+              "disabled": false,
+              "key": "pageSize",
+              "value": "10"
+            },
+            {
+              "disabled": false,
+              "key": "flavorName",
+              "value": "<string>"
+            }
+          ],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "1c9f4180-a1e1-4c55-9f04-481b36e1f1ff",
+          "name": "Paginated beans list",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "api",
+                "Beans"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "pageIndex",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                },
+                {
+                  "key": "flavorName",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"totalItems\": 8304,\n  \"pageIndex\": 4669,\n  \"pageSize\": 9401,\n  \"totalPages\": 3980,\n  \"items\": [\n    {\n      \"beanId\": 4328,\n      \"flavorName\": \"string\",\n      \"description\": \"string\",\n      \"ingredients\": [\n        \"string\",\n        \"string\"\n      ],\n      \"groupName\": [\n        \"string\",\n        \"string\"\n      ],\n      \"backgroundColor\": \"string\",\n      \"glutenFree\": false,\n      \"sugarFree\": false,\n      \"seasonal\": false,\n      \"kosher\": false,\n      \"imageUrl\": \"https://gKlxXIArVxfTjqRDkPxPuJSlO.ymtfC+nxrTnchkM9yaBhlncV\"\n    },\n    {\n      \"beanId\": 1240,\n      \"flavorName\": \"string\",\n      \"description\": \"string\",\n      \"ingredients\": [\n        \"string\",\n        \"string\"\n      ],\n      \"groupName\": [\n        \"string\",\n        \"string\"\n      ],\n      \"backgroundColor\": \"string\",\n      \"glutenFree\": true,\n      \"sugarFree\": false,\n      \"seasonal\": false,\n      \"kosher\": true,\n      \"imageUrl\": \"http://rbawAkApoYxs.jsJfsP8OzqxdXbkusgvKDPu\"\n    }\n  ]\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "ef6e0d65-9409-4b1d-b32d-54deadc9bbb3",
+      "name": "Get a single bean by id",
+      "request": {
+        "name": "Get a single bean by id",
+        "description": {},
+        "url": {
+          "path": [
+            "api",
+            "Beans",
+            ":id"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<integer>",
+              "key": "id",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "feb2f306-8141-467f-83df-b479483876b7",
+          "name": "A bean",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "api",
+                "Beans",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"beanId\": 4131,\n  \"flavorName\": \"string\",\n  \"description\": \"string\",\n  \"ingredients\": [\n    \"string\",\n    \"string\"\n  ],\n  \"groupName\": [\n    \"string\",\n    \"string\"\n  ],\n  \"backgroundColor\": \"string\",\n  \"glutenFree\": true,\n  \"sugarFree\": true,\n  \"seasonal\": true,\n  \"kosher\": false,\n  \"imageUrl\": \"https://cpMFOPuunyNlhm.zwkfNWIlfiVaE9-dj\"\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        },
+        {
+          "id": "ca292585-7b21-49a8-b756-feb1dae2f3d8",
+          "name": "Not found",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "api",
+                "Beans",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Not Found",
+          "code": 404,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "c3bf465b-a272-4b65-8b85-dfae75060657",
+      "name": "List flavor combinations",
+      "request": {
+        "name": "List flavor combinations",
+        "description": {},
+        "url": {
+          "path": [
+            "api",
+            "Combinations"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "1ded5074-f5b8-4bf6-b034-c3bb7ac4e1b9",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "api",
+                "Combinations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "51732d19-e111-42bb-bde2-d48ee0899aa1",
+      "name": "Get a combination by id",
+      "request": {
+        "name": "Get a combination by id",
+        "description": {},
+        "url": {
+          "path": [
+            "api",
+            "Combinations",
+            ":id"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<integer>",
+              "key": "id",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "d9c171cc-0970-4bb9-b965-e743e3fa3060",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "api",
+                "Combinations",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "0c9f71e5-a88b-4efe-b40d-f6f19089c7be",
+      "name": "List Jelly Belly facts",
+      "request": {
+        "name": "List Jelly Belly facts",
+        "description": {},
+        "url": {
+          "path": [
+            "api",
+            "Facts"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "2d03cb11-e126-4772-a8ed-e1f015d50940",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "api",
+                "Facts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "91dffa08-04bb-47c0-97de-cd4c7db02da7",
+      "name": "Get a fact by id",
+      "request": {
+        "name": "Get a fact by id",
+        "description": {},
+        "url": {
+          "path": [
+            "api",
+            "Facts",
+            ":id"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<integer>",
+              "key": "id",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "2636289c-99cd-4186-9b08-92f029543543",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "api",
+                "Facts",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "cd425150-a7b2-4885-b14d-2475b2653947",
+      "name": "List Jelly Belly milestones",
+      "request": {
+        "name": "List Jelly Belly milestones",
+        "description": {},
+        "url": {
+          "path": [
+            "api",
+            "MileStones"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "1f687c69-0b09-4cac-b0a3-4d0b07b26e1f",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "api",
+                "MileStones"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "c1dacc6f-a518-4edd-ba0c-36c1489b85f8",
+      "name": "Get a milestone by id",
+      "request": {
+        "name": "Get a milestone by id",
+        "description": {},
+        "url": {
+          "path": [
+            "api",
+            "MileStones",
+            ":id"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<integer>",
+              "key": "id",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "c2af3564-89df-4d78-9eee-117a411f4def",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "api",
+                "MileStones",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f16bcb3e-06e4-4221-b947-eb4493e9c31b",
+      "name": "List Jelly Belly recipes",
+      "request": {
+        "name": "List Jelly Belly recipes",
+        "description": {},
+        "url": {
+          "path": [
+            "api",
+            "Recipes"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "7d67fe9f-7e65-4b67-9bac-77cc8cb954ee",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "api",
+                "Recipes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "bd89d65e-d362-4c5d-87e6-9ee3ea2f0af0",
+      "name": "Get a recipe by id",
+      "request": {
+        "name": "Get a recipe by id",
+        "description": {},
+        "url": {
+          "path": [
+            "api",
+            "Recipes",
+            ":id"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<integer>",
+              "key": "id",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "1a0b3f74-8a5a-4f11-a147-c796482b28a6",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "api",
+                "Recipes",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://jellybellywikiapi.onrender.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "5ecd706e-25f2-4913-adb3-dd8bc56577c2",
+    "name": "Jelly Belly Wiki API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Unofficial REST API exposing Jelly Belly bean flavors, recipes, combinations,\nfacts, and milestones.\n\n\nContact Support:\n Name: Jelly Belly Wiki",
+      "type": "text/plain"
+    }
+  }
+}
