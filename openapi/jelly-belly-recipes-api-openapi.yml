@@ -1,0 +1,42 @@
+openapi: 3.1.0
+info:
+  title: Jelly Belly Wiki Beans Recipes API
+  description: 'Unofficial REST API exposing Jelly Belly bean flavors, recipes, combinations,
+
+    facts, and milestones.
+
+    '
+  version: '1.0'
+  contact:
+    name: Jelly Belly Wiki
+    url: https://jelly-belly-wiki.netlify.app/
+servers:
+- url: https://jellybellywikiapi.onrender.com
+  description: Public API host
+tags:
+- name: Recipes
+paths:
+  /api/Recipes:
+    get:
+      summary: List Jelly Belly recipes
+      operationId: listRecipes
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Recipes
+  /api/Recipes/{id}:
+    get:
+      summary: Get a recipe by id
+      operationId: getRecipe
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Recipes

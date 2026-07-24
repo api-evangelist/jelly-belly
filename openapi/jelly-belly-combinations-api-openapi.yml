@@ -1,0 +1,42 @@
+openapi: 3.1.0
+info:
+  title: Jelly Belly Wiki Beans Combinations API
+  description: 'Unofficial REST API exposing Jelly Belly bean flavors, recipes, combinations,
+
+    facts, and milestones.
+
+    '
+  version: '1.0'
+  contact:
+    name: Jelly Belly Wiki
+    url: https://jelly-belly-wiki.netlify.app/
+servers:
+- url: https://jellybellywikiapi.onrender.com
+  description: Public API host
+tags:
+- name: Combinations
+paths:
+  /api/Combinations:
+    get:
+      summary: List flavor combinations
+      operationId: listCombinations
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Combinations
+  /api/Combinations/{id}:
+    get:
+      summary: Get a combination by id
+      operationId: getCombination
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Combinations
