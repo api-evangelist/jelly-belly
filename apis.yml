@@ -8,7 +8,19 @@ description: >-
   Jelly Belly Wiki API which catalogs Jelly Belly beans, flavors, recipes,
   facts, and milestones.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jelly-belly.png
 tags:
   - Beans
   - Candy
@@ -22,22 +34,66 @@ created: '2024-11-14'
 modified: '2026-04-28'
 specificationVersion: '0.19'
 apis:
-  - aid: jelly-belly:jelly-belly-wiki-api
-    name: Jelly Belly Wiki API
-    description: >-
-      The Jelly Belly Wiki API is a community-built, read-only REST API that
-      provides detailed information about Jelly Belly beans, including flavor
-      details, facts, milestones, and recipes. It is designed as a reference
-      resource for Jelly Belly enthusiasts, hobbyist developers, and learners
-      experimenting with public APIs.
-    humanURL: https://jelly-belly-wiki.netlify.app/
-    tags:
-      - Candy
-      - Jelly Beans
-      - Recipes
-    properties:
-      - type: Documentation
-        url: https://jelly-belly-wiki.netlify.app/
+- aid: jelly-belly:jelly-belly-wiki-api
+  name: Jelly Belly Wiki API
+  description: >-
+    The Jelly Belly Wiki API is a community-built, read-only REST API that provides detailed information
+    about Jelly Belly beans, including flavor details, facts, milestones, and recipes. It is designed
+    as a reference resource for Jelly Belly enthusiasts, hobbyist developers, and learners experimenting
+    with public APIs.
+  humanURL: https://jelly-belly-wiki.netlify.app/
+  tags:
+  - Candy
+  - Jelly Beans
+  - Recipes
+  properties:
+  - type: Documentation
+    url: https://jelly-belly-wiki.netlify.app/
+- aid: jelly-belly:jelly-belly-beans-api
+  name: Jelly Belly Beans API
+  description: The Beans API from Jelly Belly — 2 operation(s) for beans.
+  humanURL: https://jelly-belly-wiki.netlify.app/
+  tags:
+  - Beans
+  properties:
+  - type: OpenAPI
+    url: openapi/jelly-belly-beans-api-openapi.yml
+- aid: jelly-belly:jelly-belly-combinations-api
+  name: Jelly Belly Combinations API
+  description: The Combinations API from Jelly Belly — 2 operation(s) for combinations.
+  humanURL: https://jelly-belly-wiki.netlify.app/
+  tags:
+  - Combinations
+  properties:
+  - type: OpenAPI
+    url: openapi/jelly-belly-combinations-api-openapi.yml
+- aid: jelly-belly:jelly-belly-facts-api
+  name: Jelly Belly Facts API
+  description: The Facts API from Jelly Belly — 2 operation(s) for facts.
+  humanURL: https://jelly-belly-wiki.netlify.app/
+  tags:
+  - Facts
+  properties:
+  - type: OpenAPI
+    url: openapi/jelly-belly-facts-api-openapi.yml
+- aid: jelly-belly:jelly-belly-milestones-api
+  name: Jelly Belly MileStones API
+  description: The MileStones API from Jelly Belly — 2 operation(s) for milestones.
+  humanURL: https://jelly-belly-wiki.netlify.app/
+  tags:
+  - MileStones
+  properties:
+  - type: OpenAPI
+    url: openapi/jelly-belly-milestones-api-openapi.yml
+- aid: jelly-belly:jelly-belly-recipes-api
+  name: Jelly Belly Recipes API
+  description: The Recipes API from Jelly Belly — 2 operation(s) for recipes.
+  humanURL: https://jelly-belly-wiki.netlify.app/
+  tags:
+  - Recipes
+  properties:
+  - type: OpenAPI
+    url: openapi/jelly-belly-recipes-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/jelly-belly-agentic-access.yml
