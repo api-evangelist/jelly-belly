@@ -1,0 +1,22 @@
+{
+  "provider": "jelly-belly",
+  "sources": [
+    "jelly-belly-beans-api-openapi.yml",
+    "jelly-belly-combinations-api-openapi.yml",
+    "jelly-belly-facts-api-openapi.yml",
+    "jelly-belly-milestones-api-openapi.yml",
+    "jelly-belly-recipes-api-openapi.yml"
+  ],
+  "outputs": [
+    "jelly-belly-beans-api-openapi.yml",
+    "jelly-belly-combinations-api-openapi.yml",
+    "jelly-belly-facts-api-openapi.yml",
+    "jelly-belly-milestones-api-openapi.yml",
+    "jelly-belly-recipes-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
