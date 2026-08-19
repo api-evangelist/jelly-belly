@@ -1,0 +1,164 @@
+{
+  "item": [
+    {
+      "id": "4e1b20a1-b6f9-494b-952d-e44bf255df39",
+      "name": "Combinations",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6df916c3-b701-4805-bdf9-db5b3e0cad8e",
+          "name": "List flavor combinations",
+          "request": {
+            "name": "List flavor combinations",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "Combinations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a0065f89-6a48-49b1-81a8-1b70ff64fe8d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "Combinations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "470fac4e-e7e9-4ea4-b6cc-02194e237ca3",
+          "name": "Get a combination by id",
+          "request": {
+            "name": "Get a combination by id",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "Combinations",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c1278c84-2d27-4a70-bc3e-99109529030d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "Combinations",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://jellybellywikiapi.onrender.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "9bf119b7-37fb-4f32-8a59-09bbe94ded60",
+    "name": "Jelly Belly Wiki Beans Combinations API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Unofficial REST API exposing Jelly Belly bean flavors, recipes, combinations,\nfacts, and milestones.\n\n\nContact Support:\n Name: Jelly Belly Wiki",
+      "type": "text/plain"
+    }
+  }
+}

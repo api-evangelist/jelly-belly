@@ -1,0 +1,164 @@
+{
+  "item": [
+    {
+      "id": "0ca1522d-b2d8-4139-99c1-6ff07c2b9298",
+      "name": "Facts",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "131e64ae-ed41-405b-8179-3a0c5368277f",
+          "name": "List Jelly Belly facts",
+          "request": {
+            "name": "List Jelly Belly facts",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "Facts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "40fd2dc1-93f9-41ec-8441-8b487559691c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "Facts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5a27c2ca-904d-4e1f-94ce-76d83a19497d",
+          "name": "Get a fact by id",
+          "request": {
+            "name": "Get a fact by id",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "Facts",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6998455b-1bf1-46c6-9afb-5dfb4024f270",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "Facts",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://jellybellywikiapi.onrender.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "29e4f2e7-159a-4998-88e8-8cb894d6dd1e",
+    "name": "Jelly Belly Wiki Beans Facts API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Unofficial REST API exposing Jelly Belly bean flavors, recipes, combinations,\nfacts, and milestones.\n\n\nContact Support:\n Name: Jelly Belly Wiki",
+      "type": "text/plain"
+    }
+  }
+}

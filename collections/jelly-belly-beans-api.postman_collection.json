@@ -1,0 +1,256 @@
+{
+  "item": [
+    {
+      "id": "050d9704-2fbe-4613-98c6-68ce2049f826",
+      "name": "Beans",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a6fcdba1-c66f-4251-b848-f3c1f1f51d54",
+          "name": "List Jelly Belly beans (paginated)",
+          "request": {
+            "name": "List Jelly Belly beans (paginated)",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "Beans"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "pageIndex",
+                  "value": "1"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageSize",
+                  "value": "10"
+                },
+                {
+                  "disabled": false,
+                  "key": "flavorName",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1fdecd38-78d1-442b-9eac-9a8f312fb67a",
+              "name": "Paginated beans list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "Beans"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "pageIndex",
+                      "value": "1"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "10"
+                    },
+                    {
+                      "key": "flavorName",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"totalItems\": 9445,\n  \"pageIndex\": 8122,\n  \"pageSize\": 7419,\n  \"totalPages\": 3832,\n  \"items\": [\n    {\n      \"beanId\": 8656,\n      \"flavorName\": \"string\",\n      \"description\": \"string\",\n      \"ingredients\": [\n        \"string\",\n        \"string\"\n      ],\n      \"groupName\": [\n        \"string\",\n        \"string\"\n      ],\n      \"backgroundColor\": \"string\",\n      \"glutenFree\": false,\n      \"sugarFree\": true,\n      \"seasonal\": true,\n      \"kosher\": true,\n      \"imageUrl\": \"http://zuiCQYlZAPDZpBvhrgFOAAmcJz.zwxyh9ivQtJTxS4fMYEw4y3iFHw,cY0D1CpipGnNhR+HcxWa-+bw3kY93v6vdt6AC0,3\"\n    },\n    {\n      \"beanId\": 1581,\n      \"flavorName\": \"string\",\n      \"description\": \"string\",\n      \"ingredients\": [\n        \"string\",\n        \"string\"\n      ],\n      \"groupName\": [\n        \"string\",\n        \"string\"\n      ],\n      \"backgroundColor\": \"string\",\n      \"glutenFree\": false,\n      \"sugarFree\": true,\n      \"seasonal\": false,\n      \"kosher\": true,\n      \"imageUrl\": \"http://ZbujMzOYrasbPmTXQdD.qrdpE8gCYNMDV7fB8quOGvsAknI2FBLzOHoX3k.\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e4a428a7-33a8-426d-9da0-a14fa9202b8d",
+          "name": "Get a single bean by id",
+          "request": {
+            "name": "Get a single bean by id",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "Beans",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7e48658a-2baf-4c09-8dd6-43d35be7d0f6",
+              "name": "A bean",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "Beans",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"beanId\": 4994,\n  \"flavorName\": \"string\",\n  \"description\": \"string\",\n  \"ingredients\": [\n    \"string\",\n    \"string\"\n  ],\n  \"groupName\": [\n    \"string\",\n    \"string\"\n  ],\n  \"backgroundColor\": \"string\",\n  \"glutenFree\": true,\n  \"sugarFree\": true,\n  \"seasonal\": false,\n  \"kosher\": false,\n  \"imageUrl\": \"http://aFhGHNTOHn.hahZEb8AsCMyG2fsG56XTDBkYhfIYmZ\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7639f2ea-cde7-4f4b-9f26-9f8d0ec2c9bd",
+              "name": "Not found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "Beans",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://jellybellywikiapi.onrender.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "b4461aae-a5cd-4fb1-9b0f-c5e68e40163d",
+    "name": "Jelly Belly Wiki Beans API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Unofficial REST API exposing Jelly Belly bean flavors, recipes, combinations,\nfacts, and milestones.\n\n\nContact Support:\n Name: Jelly Belly Wiki",
+      "type": "text/plain"
+    }
+  }
+}

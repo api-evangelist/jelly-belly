@@ -1,0 +1,47 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Jelly Belly Wiki Beans Recipes API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Recipes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Jelly Belly recipes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://jellybellywikiapi.onrender.com/api/Recipes"
+          },
+          "docs": "List Jelly Belly recipes"
+        },
+        {
+          "info": {
+            "name": "Get a recipe by id",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://jellybellywikiapi.onrender.com/api/Recipes/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a recipe by id"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,47 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Jelly Belly Wiki Beans MileStones API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "MileStones",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Jelly Belly milestones",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://jellybellywikiapi.onrender.com/api/MileStones"
+          },
+          "docs": "List Jelly Belly milestones"
+        },
+        {
+          "info": {
+            "name": "Get a milestone by id",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://jellybellywikiapi.onrender.com/api/MileStones/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a milestone by id"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

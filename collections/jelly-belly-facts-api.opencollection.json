@@ -1,0 +1,47 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Jelly Belly Wiki Beans Facts API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Facts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Jelly Belly facts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://jellybellywikiapi.onrender.com/api/Facts"
+          },
+          "docs": "List Jelly Belly facts"
+        },
+        {
+          "info": {
+            "name": "Get a fact by id",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://jellybellywikiapi.onrender.com/api/Facts/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a fact by id"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

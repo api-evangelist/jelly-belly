@@ -1,0 +1,64 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Jelly Belly Wiki Beans API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Beans",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Jelly Belly beans (paginated)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://jellybellywikiapi.onrender.com/api/Beans",
+            "params": [
+              {
+                "name": "pageIndex",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "pageSize",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "flavorName",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List Jelly Belly beans (paginated)"
+        },
+        {
+          "info": {
+            "name": "Get a single bean by id",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://jellybellywikiapi.onrender.com/api/Beans/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a single bean by id"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

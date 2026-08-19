@@ -1,0 +1,47 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Jelly Belly Wiki Beans Combinations API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Combinations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List flavor combinations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://jellybellywikiapi.onrender.com/api/Combinations"
+          },
+          "docs": "List flavor combinations"
+        },
+        {
+          "info": {
+            "name": "Get a combination by id",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://jellybellywikiapi.onrender.com/api/Combinations/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a combination by id"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
