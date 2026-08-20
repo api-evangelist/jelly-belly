@@ -81,6 +81,8 @@ apis:
   description: The MileStones API from Jelly Belly — 2 operation(s) for milestones.
   humanURL: https://jelly-belly-wiki.netlify.app/
   tags:
+  - Milestones
+  tags_raw:
   - MileStones
   properties:
   - type: OpenAPI
