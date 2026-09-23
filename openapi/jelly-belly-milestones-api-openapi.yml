@@ -1,11 +1,9 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Jelly Belly Wiki Beans MileStones API
+  title: Jelly Belly Wiki Mile Stones API
   description: 'Unofficial REST API exposing Jelly Belly bean flavors, recipes, combinations,
 
-    facts, and milestones.
-
-    '
+    facts, and milestones.'
   version: '1.0'
   contact:
     name: Jelly Belly Wiki
@@ -14,7 +12,7 @@ servers:
 - url: https://jellybellywikiapi.onrender.com
   description: Public API host
 tags:
-- name: MileStones
+- name: Milestones
 paths:
   /api/MileStones:
     get:
@@ -24,7 +22,7 @@ paths:
         '200':
           description: OK
       tags:
-      - MileStones
+      - Milestones
   /api/MileStones/{id}:
     get:
       summary: Get a milestone by id
@@ -39,4 +37,4 @@ paths:
         '200':
           description: OK
       tags:
-      - MileStones
+      - Milestones

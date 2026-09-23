@@ -1,11 +1,7 @@
 {
   "provider": "jelly-belly",
   "sources": [
-    "jelly-belly-beans-api-openapi.yml",
-    "jelly-belly-combinations-api-openapi.yml",
-    "jelly-belly-facts-api-openapi.yml",
-    "jelly-belly-milestones-api-openapi.yml",
-    "jelly-belly-recipes-api-openapi.yml"
+    "_original/jelly-belly-openapi.yml"
   ],
   "outputs": [
     "jelly-belly-beans-api-openapi.yml",
@@ -17,6 +13,31 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "jelly-belly-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "jelly-belly-openapi.yml: tagged paths GET /api/Beans -> Beans",
+    "jelly-belly-openapi.yml: tagged paths GET /api/Beans/{id} -> Beans",
+    "jelly-belly-openapi.yml: tagged paths GET /api/Combinations -> Combinations",
+    "jelly-belly-openapi.yml: tagged paths GET /api/Combinations/{id} -> Combinations",
+    "jelly-belly-openapi.yml: tagged paths GET /api/Facts -> Facts",
+    "jelly-belly-openapi.yml: tagged paths GET /api/Facts/{id} -> Facts",
+    "jelly-belly-openapi.yml: tagged paths GET /api/MileStones -> MileStones",
+    "jelly-belly-openapi.yml: tagged paths GET /api/MileStones/{id} -> MileStones",
+    "jelly-belly-openapi.yml: tagged paths GET /api/Recipes -> Recipes",
+    "jelly-belly-openapi.yml: tagged paths GET /api/Recipes/{id} -> Recipes",
+    "jelly-belly-openapi.yml: declared missing tag: Beans",
+    "jelly-belly-openapi.yml: declared missing tag: Combinations",
+    "jelly-belly-openapi.yml: declared missing tag: Facts",
+    "jelly-belly-openapi.yml: declared missing tag: MileStones",
+    "jelly-belly-openapi.yml: declared missing tag: Recipes",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "jelly-belly-beans-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "jelly-belly-combinations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "jelly-belly-facts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "jelly-belly-milestones-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "jelly-belly-recipes-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
