@@ -1,4 +1,4 @@
-# Jelly Belly (jelly-belly)
+# Jelly Belly
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,59 +66,123 @@
 
 Jelly Belly is the iconic American gourmet jelly bean candy company, owned by Ferrara Candy Company, known for its signature flavor assortments, themed collections, and historical association with American culture. This repository indexes the company's web properties and the community Jelly Belly Wiki API which catalogs Jelly Belly beans, flavors, recipes, facts, and milestones.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/jelly-belly/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/jelly-belly/refs/heads/main/apis.yml)
+**Areas:** Beans · Candy · Confectionery · Food · Jelly Beans · Recipes
 
-## Scope
+## Jelly Belly on APIs.io
 
-- **Type:** Index
+Everything profiled for Jelly Belly is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/jelly-belly/](https://apis.io/providers/jelly-belly/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (6)
 
-- Beans
-- Candy
-- Confectionery
-- Food
-- Jelly Beans
-- Recipes
+- [Jelly Belly Wiki API](https://apis.io/apis/jelly-belly/jelly-belly-wiki-api/) — The Jelly Belly Wiki API is a community-built, read-only REST API that provides detailed information about Jelly Belly beans, including flavor details,…
+- [Jelly Belly Beans API](https://apis.io/apis/jelly-belly/jelly-belly-beans-api/) — The Beans API from Jelly Belly — 2 operation(s) for beans.
+- [Jelly Belly Combinations API](https://apis.io/apis/jelly-belly/jelly-belly-combinations-api/) — The Combinations API from Jelly Belly — 2 operation(s) for combinations.
+- [Jelly Belly Facts API](https://apis.io/apis/jelly-belly/jelly-belly-facts-api/) — The Facts API from Jelly Belly — 2 operation(s) for facts.
+- [Jelly Belly MileStones API](https://apis.io/apis/jelly-belly/jelly-belly-milestones-api/) — The MileStones API from Jelly Belly — 2 operation(s) for milestones.
+- [Jelly Belly Recipes API](https://apis.io/apis/jelly-belly/jelly-belly-recipes-api/) — The Recipes API from Jelly Belly — 2 operation(s) for recipes.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-11-14
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Jelly Belly Wiki API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Jelly Belly Wiki API is a community-built, read-only REST API that provides detailed information about Jelly Belly beans, including flavor details, facts, milestones, and recipes. It is designed as a reference resource for Jelly Belly enthusiasts, hobbyist developers, and learners experimenting with public APIs.
+- [Jelly Belly Agentic Access](https://apis.io/agentic-access/jelly-belly/jelly-belly-agentic-access/)
 
-- **Human URL:** [https://jelly-belly-wiki.netlify.app/](https://jelly-belly-wiki.netlify.app/)
+#### Collections (6)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Candy
-- Jelly Beans
-- Recipes
+- [Jelly Belly Wiki API](https://apis.io/collections/jelly-belly/open-jelly-belly/)
+- [Jelly Belly Wiki Beans API](https://apis.io/collections/jelly-belly/open-jelly-belly-beans-api/)
+- [Jelly Belly Wiki Beans Combinations API](https://apis.io/collections/jelly-belly/open-jelly-belly-combinations-api/)
+- [Jelly Belly Wiki Beans Facts API](https://apis.io/collections/jelly-belly/open-jelly-belly-facts-api/)
+- [Jelly Belly Wiki Beans MileStones API](https://apis.io/collections/jelly-belly/open-jelly-belly-milestones-api/)
+- [Jelly Belly Wiki Beans Recipes API](https://apis.io/collections/jelly-belly/open-jelly-belly-recipes-api/)
 
-#### Properties
+#### Security (1)
 
-- [Documentation](https://jelly-belly-wiki.netlify.app/)
-- [Postman Collection](collections/jelly-belly.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/jelly-belly.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Jelly Belly Domain Security](https://apis.io/security/jelly-belly/jelly-belly-domain-security/)
 
-- [LinkedIn](https://www.linkedin.com/company/jelly-belly-candy-company)
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Jelly Belly Plans Pricing](https://apis.io/plans/jelly-belly/jelly-belly-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Jelly Belly Rate Limits](https://apis.io/rate-limits/jelly-belly/jelly-belly-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Jelly Belly Finops](https://apis.io/finops/jelly-belly/jelly-belly-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.jellybelly.com/)
-- [About](https://www.jellybelly.com/our-heritage)
-- [Visitor Center](https://www.jellybelly.com/visitor-center)
-- [Recipes](https://www.jellybelly.com/beanspiration)
-- [Where To Buy](https://www.jellybelly.com/where-to-buy)
-- [Privacy Policy](https://www.jellybelly.com/privacy-policy)
-- [Terms of Service](https://www.jellybelly.com/terms-use)
-- [Accessibility](https://www.jellybelly.com/accessibility)
+- [Terms of service](https://www.jellybelly.com/terms-use)
+- [Privacy policy](https://www.jellybelly.com/privacy-policy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 21.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 41.5 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 18.4 |
+
+**Agent readiness 17.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/jelly-belly/](https://apis.io/providers/jelly-belly/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Jelly Belly: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/jelly-belly/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
